@@ -8,7 +8,7 @@ class JwtService {
     }
 
     verify(token) {
-        return jwt.verify(token, config,jwt.secret)
+        return jwt.verify(token, config.jwt.secret)
     }
 }
 

@@ -6,8 +6,6 @@ const { registerValidator, loginValidator} = require('./auth.validator')
 const validateRequest = require('../../middlewares/validation.middleware')
 const authJwt = require('../../middlewares/auth.middleware')
 
-router.use(authJwt);
-
 router.post('/register',
     registerValidator,
     validateRequest,

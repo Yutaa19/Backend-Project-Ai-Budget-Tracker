@@ -7,43 +7,43 @@ module.exports = (sequelize, DataTypes) => {
         },
         month: {
             type: DataTypes.STRING(25),
-            allownull: false,
+            allowNull: false,
         },
         year: {
             type: DataTypes.STRING(4),
-            allownull: false
+            allowNull: false
         },
         total_income: {
             type: DataTypes.STRING,
-            allownull:false,
+            allowNull:false,
         },
         total_expense: {
             type:DataTypes.STRING,
-            allownull:false,
+            allowNull:false,
         },
         balance: {
             type:DataTypes.STRING,
-            allownull:false
+            allowNull:false
         },
         ai_summary: {
             type:DataTypes.TEXT,
-            allownull:false
+            allowNull:false
         },
         ai_recomendation: {
             type: DataTypes.TEXT,
-            allownull:false
+            allowNull:false
         },
         user_id: {
             type: DataTypes.INTEGER,
-            allownull:false
+            allowNull:false
         },
         created_at: {
-            allownull: false,
+            allowNull: false,
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
         },
         updated_at: {
-            allownull: false,
+            allowNull: false,
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
         },
@@ -52,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
         modelName: 'MonthlySummary',
         tableName: 'monthly_summary',
         timestamp: false,
-        underscred: true
+        underscored: true
     });
 
     MonthlySummary.associate = (models) => {

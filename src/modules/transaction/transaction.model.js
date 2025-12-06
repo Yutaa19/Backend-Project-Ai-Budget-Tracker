@@ -7,43 +7,43 @@ module.exports = (sequelize, DataTypes) => {
         },
         type: {
             type: DataTypes.ENUM('income', 'expense'),
-            allownull: false
+            allowNull: false
         },
-        amaount: {
+        amount: {
             type: DataTypes.STRING,
-            allownull: false
+            allowNull: false
         },
         date: {
             type: DataTypes.DATE,
-            allownull: true
+            allowNull: true
 
         },
         note: {
             type: DataTypes.TEXT,
-            allownull: true
+            allowNull: true
 
         },
         user_id: {
             type: DataTypes.STRING,
-            allownull: false
+            allowNull: false
         },
         category_id: {
             type: DataTypes.INTEGER,
-            allownull: false
+            allowNull: false
         },
         created_at: {
-            allownull: false,
+            allowNull: false,
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
         },
         updated_at: {
-            allownull: false,
+            allowNull: false,
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
         },
     }, {
         tableName: 'transaction',
-        timestamp: true,
+        timestamps: true,
         underscored: true
     });
 
