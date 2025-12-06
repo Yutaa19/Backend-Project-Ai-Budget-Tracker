@@ -7,4 +7,4 @@ class ForbiddenError extends HttpError {
     }
 }
 
-module.export = ForbiddenError
+module.exports = ForbiddenError
